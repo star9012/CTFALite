@@ -1,10 +1,23 @@
 # CTFALite: Lightweight Channel-specific Temporal and Frequency Attention Mechanism for Enhancing the Speaker Embedding Extractor (interspeech2022)
-This is a Pytorch-based implementation of our work [CTFALite](). Packages are listed in requirements.txt.
+This is a Pytorch-based implementation of our work [CTFALite](https://www.isca-speech.org/archive/interspeech_2022/wei22d_interspeech.html). All convolutional attention models are implemented in attention.py.
+
+Cite as: Wei, Y., Du, J., Liu, H., Wang, Q. (2022) CTFALite: Lightweight Channel-specific Temporal and Frequency Attention Mechanism for Enhancing the Speaker Embedding Extractor. Proc. Interspeech 2022, 341-345, doi: 10.21437/Interspeech.2022-10288
+
+@inproceedings{wei22d_interspeech,
+  author={Yuheng Wei and Junzhao Du and Hui Liu and Qian Wang},
+  title={{CTFALite: Lightweight Channel-specific Temporal and Frequency Attention Mechanism for Enhancing the Speaker Embedding Extractor}},
+  year=2022,
+  booktitle={Proc. Interspeech 2022},
+  pages={341--345},
+  doi={10.21437/Interspeech.2022-10288}
+}
+
 ## Datasets
 The datasets used in our experiments include the training and test sets of VoxCeleb1 and the test set of CN-Celeb1, which can be downloaded from [VoxCeleb](https://www.robots.ox.ac.uk/~vgg/data/voxceleb) and [Cn-Celeb1](https://www.openslr.org/resources/82/cn-celeb_v2.tar.gz). 
 ## Preparation
-1. make sure that all audio files are in .wav format.  
-2. make sure that the directory structures of the training and test sets of VoxCeleb1 are organized as *\YourPath\VoxCeleb1_Train\Speakers\Wavfiles* and *\YourPath\VoxCeleb1_Test\Speakers\Wavefiles*, respectively.
+1. python==3.7 pytorch==1.7.0 torchaudio==0.7.0 tensorboardx==2.2 scikit-learn==1.0.2 scipy==1.6.2
+2. make sure that all audio files are in .wav format.  
+3. make sure that the directory structures of the training and test sets of VoxCeleb1 are organized as *\YourPath\VoxCeleb1_Train\Speakers\Wavfiles* and *\YourPath\VoxCeleb1_Test\Speakers\Wavefiles*, respectively.
 ## Running
 ### Train models
 1. set the values of hyperparameters in hyper_parameters.py.

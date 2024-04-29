@@ -1,5 +1,6 @@
 # CTFALite: Lightweight Channel-specific Temporal and Frequency Attention Mechanism for Enhancing the Speaker Embedding Extractor (interspeech2022)
 This is a Pytorch-based implementation of our work [CTFALite](https://www.isca-speech.org/archive/interspeech_2022/wei22d_interspeech.html). All convolutional attention models are implemented in attention.py.
+
 The convolution kernel size $k$ used in CTFALite can be set to any value as you want, such as $k=\lfloor0.5\log_{2}N_{c}+0.5\rfloor$ (the same as ECA) or a fixed value (3, 5, etc.).
 
 Cite as: Wei, Y., Du, J., Liu, H., Wang, Q. (2022) CTFALite: Lightweight Channel-specific Temporal and Frequency Attention Mechanism for Enhancing the Speaker Embedding Extractor. Proc. Interspeech 2022, 341-345, doi: 10.21437/Interspeech.2022-10288
